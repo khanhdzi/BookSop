@@ -11,7 +11,6 @@ Acknowledgement: Acknowledge the resources that you use here. */
     gap: 4%;
     background-color: rgba(48, 196, 176, 0.9);
     ;
-
 }
 
 .covers {
@@ -124,14 +123,12 @@ Acknowledgement: Acknowledge the resources that you use here. */
 @media screen and (max-width: 767px) {
     .book-picture {
         display: block;
-        /* gap: 5% */
     }
 
     .covers {
         align-items: center;
         display: flex;
         flex-direction: column;
-
     }
 
     .covers img {
