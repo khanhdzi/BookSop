@@ -13,7 +13,7 @@ Acknowledgement: Acknowledge the resources that you use here. */
     border-color: darkcyan;
     padding: 4%;
     background-color: rgba(48, 196, 176, 0.9);
-    width: 60%;
+    width: 80%;
     gap: 5%;
     transition: 1s ease;
 }
