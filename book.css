@@ -1,0 +1,147 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Thach Khanh Dzi
+ID: s3980883
+Acknowledgement: Acknowledge the resources that you use here. */
+.book-indiv {
+    display: flex;
+    padding: 5%;
+    gap: 4%;
+    background-color: rgba(48, 196, 176, 0.9);
+    ;
+
+}
+
+.covers {
+    display: flex;
+    gap: 1%;
+}
+
+.covers img {
+    width: 520px;
+    height: 720px;
+    border: solid 3px darkslategray;
+}
+
+.book-picture {
+    display: block;
+
+}
+
+.book-picture img {
+    width: 130px;
+    height: 180px;
+    border: solid 3px darkslategray;
+}
+
+.book-indiv h1 {
+    font-size: 60px;
+    font-family: 'century gothic';
+    font-weight: 150;
+    color: darkslategray;
+    transition: 0.5s ease;
+}
+
+.book-indiv h1:hover {
+    transform: scale(1.05);
+}
+
+.book-indiv h2 {
+    margin-bottom: 5%;
+    margin-left: 1%;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+.book-indiv h2:hover {
+    color: aquamarine;
+}
+
+.book-indiv h3 {
+    font-size: 25px;
+    font-family: 'century gothic';
+    font-weight: 150;
+    color: darkslategray;
+
+}
+
+.book-indiv p {
+    font-size: 20px;
+    color: darkslategrey;
+}
+
+.button {
+    background-color: darkcyan;
+    text-align: center;
+    padding: 1% 3%;
+    font-size: 40px;
+    border-radius: 15px;
+    border: solid 3px darkslategray;
+    color: aquamarine;
+    box-shadow: 0px 0px 2px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.button:hover {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px aquamarine;
+    transition: 0.1s;
+}
+
+.categories {
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .book-indiv {
+        display: block;
+    }
+
+    .book-picture {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .covers img {
+        width: 420px;
+        height: 620px;
+    }
+
+    .book-picture img {
+        width: 108px;
+        height: 144px;
+    }
+
+    .button {
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .book-picture {
+        display: block;
+        /* gap: 5% */
+    }
+
+    .covers {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .covers img {
+        width: 380px;
+        height: 580px;
+    }
+
+    .book-picture img {
+        width: 108px;
+        height: 144px;
+
+    }
+}

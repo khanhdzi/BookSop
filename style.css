@@ -1,0 +1,28 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Thach Khanh Dzi
+ID: s3980883
+Acknowledgement: Acknowledge the resources that you use here. */
+
+/* UTILITIES */
+body {
+    background-image: url('fer.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+
+

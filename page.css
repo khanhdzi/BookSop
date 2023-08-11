@@ -1,0 +1,252 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Thach Khanh Dzi
+ID: s3980883
+Acknowledgement: Acknowledge the resources that you use here. */
+
+.banner {
+    margin: auto;
+    display: flex;
+    border: solid;
+    border-color: darkcyan;
+    padding: 4%;
+    background-color: rgba(48, 196, 176, 0.9);
+    width: 60%;
+    gap: 5%;
+    transition: 1s ease;
+}
+.banner:hover{
+    transform: scale(1.03) ;
+}
+.banner h1{
+    font-size: 60px;
+    font-family: 'century gothic';
+    font-weight: 150;
+    color: darkslategray;
+}
+.banner p{
+    
+    font-size: 25px;
+    color: darkslategray;
+    font-family:'Times New Roman';
+}
+
+.banner img {
+    width: 500px;
+    height: 500px;
+    border: solid aquamarine;
+}
+
+.category {
+
+    margin: auto;
+    display: block;
+    border: solid 4px;
+    border-color: darkcyan;
+    padding: auto;
+    background-color: rgba(48, 196, 176, 0.9);
+    width: 90%;
+}
+
+.description {
+    margin-left: 1%;
+}
+
+.description a {
+    font-size: 30px;
+    color: aquamarine;
+    font-family: monospace;
+    transition: 0.3s ease;
+}
+.description a:hover{
+    color: darkcyan;
+}
+
+.category h2{
+    font-size: 30px;
+    color: darkslategray;
+    margin-left: 0.2%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.description p {
+    font-size: 25px;
+    font-style: italic;
+    color: darkslategray;
+}
+
+.container-book {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+.book {
+    display: flex;
+    gap: 2%;
+    max-width: 400px;
+}
+.book img {
+    border: solid 3px;
+    border-color: aquamarine;
+    height: 400px;
+    width: 260px;
+    transition: 0.5s ease all;
+}
+.book img:hover{
+    transform: translateY(-15px);
+}
+.book-title a{
+    color: rgb(32, 54, 54);
+    font-family: 'century gothic';
+}
+.book-title p{
+    color: darkslategray;
+    font-size: 20px;
+}
+.text {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(46, 145, 132, 0.342);
+    font-size: 30px;
+    color: darkslategray;
+    width: 80%;
+    height: auto;
+    text-transform: uppercase;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(46, 145, 132, 0.342);
+    width: 20%;
+    height: 40px;
+    border: solid 2px;
+    border-color: darkslategray;
+
+}
+.more :hover{
+    transform: scale(1.1) ;
+color: aquamarine ;
+}
+
+.more a {
+    font-family: monospace;
+    font-size: 33px;
+    color: darkslategray;
+    transition: 0.5s ease;
+}
+
+.categories{
+   
+    display: flex;
+    justify-content: center;    
+    font-size: 50px;
+    background-color: rgba(0, 139, 139, 0.815);
+    border: solid darkslategray;
+    padding: 1%;
+
+}
+.categories a{
+    color: aquamarine;    
+    transition: 0.5s ease;
+}
+.categories :hover{
+    background-color:mediumaquamarine ;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+@media screen and (max-width: 1680px) {
+
+    .book img {
+        height: 380px;
+        width: 230px;
+    }
+.book {
+    max-width: 200px;
+}
+
+
+    .container-book {
+        gap: 15%;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .book img {
+        height: 288px;
+        width: 184px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .book img {
+        height: 260px;
+        width: 160px;
+    }
+    .book-title{
+        display: none;
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner img{
+        
+        width: 600px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 950px){
+    .banner img{
+        width: 300px;
+        height: 300px;
+    }
+    .description p{
+        padding: 5%;
+    }
+    .book {
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .book {
+        max-width: 200px;
+    }
+    .book img {
+        height: 576px;
+        width: 368px;
+    }
+.book-title{
+    display: flex;
+    flex-direction: column;
+    
+}
+    .container-book {
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+    }
+
+    .banner{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .book img {
+        height: 288px;
+        width: 184px;
+    }
+
+
+}
